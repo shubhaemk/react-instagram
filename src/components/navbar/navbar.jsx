@@ -1,28 +1,23 @@
 import React from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink
-  } from 'reactstrap';
 
 
 const NavBar = (props) => {
 
   return (
-      <div>
-        <Navbar color="light" light expand="md" className="fixed-top">
-          <NavbarBrand href="/">Commentlyser for Instagram</NavbarBrand>
-          <Collapse navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/about/" className="text-primary">About</NavLink>
-              </NavItem>
-            </Nav>
-          </Collapse>
-        </Navbar>
+      <div className="fixed-top" >
+          <nav className="navbar navbar-exapnd-md bg-light">
+            <div className="d-flex flex-row">
+              <div className="p-2">Commentlyzer Instagram</div>
+            </div>
+            <div className="d-flex flex-row-reverse">
+              <div className="p-2">
+                <a href="/" className="nav-link">About</a>
+              </div>
+              <div className="p-2">
+                <a href="/" className="nav-link">Github</a>
+              </div>
+            </div>
+          </nav>
       </div>
   );
 }
